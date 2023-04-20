@@ -14,6 +14,7 @@ docker run -ti
     -e SERVER_FPS=30.000000
     -e SAVE_INTERVAL=300
     -e BACKUP_INTERVAL=1800
+    -e TIMEZONE=Europe/Moscow
     -p 7777:7777/udp  
     astroserver
 ```
@@ -37,6 +38,7 @@ services:
       SERVER_FPS: "30.000000"
       SAVE_INTERVAL: "300"
       BACKUP_INTERVAL: "1800"
+      TIMEZONE: "Europe/Moscow"
     ports:
       - "7777/udp"
     volumes:
